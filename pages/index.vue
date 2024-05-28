@@ -1,19 +1,20 @@
-<template>
-    <div>
-        <h1>index</h1>
-        <AppAlert>
-            This iskjkio an auto-imported component.
-        </AppAlert>
-        <NuxtLayout>
-            <NuxtPage />
-        </NuxtLayout>
-    </div>
-</template>
-    
-    
-<script lang="ts">
+<script setup lang="ts">
+
+
+definePageMeta( {
+    middleware: ['auth']
+})
 
 </script>
+
+
+<template>
+    <div>
+      <h1>oi preciso esta autenticado
+
+      </h1>
+    </div>
+</template>
     
     
 <style scoped>
